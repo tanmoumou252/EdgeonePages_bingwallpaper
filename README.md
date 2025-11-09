@@ -22,6 +22,7 @@ module:["edge-functions/api/day-api.js:onRequest"]},]
 ```
 
 - 设置自定义域
+
 注意上述代码里出现的`routePath` : `domain/api/day-api`这就是图片的访问地址
 
 访问后会跳转具体图片的url `domain/pic/light/bingwallpaper_12.jpg` 这和cf worker的实现不一样 应该也能做到不跳具体的图片
