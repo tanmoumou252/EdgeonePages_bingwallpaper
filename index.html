@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图模式选择</title>
+    <style>
+        /* 全局重置和基础样式 */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* 现代渐变背景 */
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            /* 使用卡片式设计，增加立体感 */
+            background: rgba(255, 255, 255, 0.05);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            /* 玻璃拟态效果 (可选，现代设计趋势) */
+            backdrop-filter: blur(5px);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #e0e0e0;
+        }
+
+        p {
+            margin-top: 20px;
+            color: #aaa;
+            font-size: 0.9em;
+        }
+
+        /* 按钮样式 */
+        .btn {
+            display: block;
+            margin: 15px 0;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px); /* 悬停时微微上浮 */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 白天模式按钮颜色 */
+        .btn-day {
+            background-color: #FFD700; /* 金色/黄色 */
+            color: #333;
+        }
+
+        .btn-day:hover {
+            background-color: #e6c200;
+        }
+
+        /* 黑暗模式按钮颜色 */
+        .btn-night {
+            background-color: #4B0082; /* 深紫色 */
+            color: white;
+        }
+
+        .btn-night:hover {
+            background-color: #3a0066;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>背景图 API 选择</h1>
+        <p>点击下方链接获取不同模式的随机背景图片 URL。</p>
+        
+        <a href="/api/day-api" class="btn btn-day">🌞 白天模式 API URL</a>
+        
+        <a href="/api/night-api" class="btn btn-night">🌙 黑暗模式 API URL</a>
+        
+        <p>将新页面地址栏的 URL 复制到你需要设置背景的地方。</p>
+    </div>
+</body>
+</html>
